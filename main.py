@@ -43,7 +43,7 @@ def main(args: argparse.Namespace):
     # driver.maximize_window()
     driver.get("https://www.duolingo.com/")
 
-    web_driver_wait = WebDriverWait(driver, 20)
+    web_driver_wait = WebDriverWait(driver, 60 * 10)
 
     with open(".account.config") as f:
         username, password = f.read().splitlines()
